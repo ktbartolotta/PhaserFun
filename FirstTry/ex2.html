@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>First Example</title>
+    <script type="text/javascript" src="/lib/phaser.min.js"></script>
+    <script type="text/javascript" src="/src/js/ex2/stateA.js"></script>
+    <script type="text/javascript" src="/src/js/ex2/stateB.js"></script>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        
+    var game = new Phaser.Game(800, 600);
+
+    game.state.add('StateA', MyGame.StateA);
+    game.state.add('StateB', MyGame.StateB);
+
+    game.state.start('StateA');
+
+    </script>
+
+</body>
+</html>
